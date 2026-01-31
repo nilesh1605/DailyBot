@@ -1,3 +1,9 @@
+import subprocess
+import sys
+
+subprocess.check_call([sys.executable, "-m", "pip", "uninstall", "-y", "python-telegram-bot"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "python-telegram-bot==20.7"])
+
 import logging
 import os
 from telegram import Update, ReplyKeyboardMarkup
