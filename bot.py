@@ -4,7 +4,8 @@ from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-
+print("BOT_TOKEN VALUE:", BOT_TOKEN)
+print("BOT_TOKEN LENGTH:", len(BOT_TOKEN) if BOT_TOKEN else "NONE")
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO
